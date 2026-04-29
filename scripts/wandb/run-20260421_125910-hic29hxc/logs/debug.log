@@ -1,0 +1,83 @@
+2026-04-21 12:59:10,659 INFO    MainThread:1713505 [wandb_setup.py:_flush():81] Current SDK version is 0.26.0
+2026-04-21 12:59:10,659 INFO    MainThread:1713505 [wandb_setup.py:_flush():81] Configure stats pid to 1713505
+2026-04-21 12:59:10,659 INFO    MainThread:1713505 [wandb_setup.py:_flush():81] Loading settings from environment variables
+2026-04-21 12:59:10,659 INFO    MainThread:1713505 [wandb_init.py:setup_run_log_directory():721] Logging user logs to /home/massive_rabbit/Documents/GitHub/Neural-Training-Observatory/scripts/wandb/run-20260421_125910-hic29hxc/logs/debug.log
+2026-04-21 12:59:10,659 INFO    MainThread:1713505 [wandb_init.py:setup_run_log_directory():722] Logging internal logs to /home/massive_rabbit/Documents/GitHub/Neural-Training-Observatory/scripts/wandb/run-20260421_125910-hic29hxc/logs/debug-internal.log
+2026-04-21 12:59:10,659 INFO    MainThread:1713505 [wandb_init.py:init():848] calling init triggers
+2026-04-21 12:59:10,659 INFO    MainThread:1713505 [wandb_init.py:init():853] wandb.init called with sweep_config: {}
+config: {'lr': 0.001, 'batch_size': 64, 'epochs': 5, 'model': 'MLP', '_wandb': {}}
+2026-04-21 12:59:10,659 INFO    MainThread:1713505 [wandb_init.py:init():896] starting backend
+2026-04-21 12:59:10,873 INFO    MainThread:1713505 [wandb_init.py:init():911] sending inform_init request
+2026-04-21 12:59:10,876 INFO    MainThread:1713505 [wandb_init.py:init():919] backend started and connected
+2026-04-21 12:59:10,886 INFO    MainThread:1713505 [wandb_init.py:init():989] updated telemetry
+2026-04-21 12:59:10,890 INFO    MainThread:1713505 [wandb_init.py:init():1013] communicating run to backend with 90.0 second timeout
+2026-04-21 12:59:11,622 INFO    MainThread:1713505 [wandb_init.py:init():1058] starting run threads in backend
+2026-04-21 12:59:11,654 INFO    MainThread:1713505 [wandb_run.py:_console_start():2542] atexit reg
+2026-04-21 12:59:11,654 INFO    MainThread:1713505 [wandb_run.py:_redirect():2391] redirect: wrap_raw
+2026-04-21 12:59:11,654 INFO    MainThread:1713505 [wandb_run.py:_redirect():2460] Wrapping output streams.
+2026-04-21 12:59:11,654 INFO    MainThread:1713505 [wandb_run.py:_redirect():2483] Redirects installed.
+2026-04-21 12:59:11,656 INFO    MainThread:1713505 [wandb_init.py:init():1098] run started, returning control to user process
+2026-04-21 12:59:39,358 INFO    wandb-AsyncioManager-main:1713505 [service_client.py:_forward_responses():134] Reached EOF.
+2026-04-21 12:59:39,358 INFO    wandb-AsyncioManager-main:1713505 [mailbox.py:close():155] Closing mailbox, abandoning 1 handles.
+2026-04-21 12:59:40,536 ERROR   wandb-AsyncioManager-main:1713505 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/massive_rabbit/miniforge3/envs/NeuTrObs/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/massive_rabbit/miniforge3/envs/NeuTrObs/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "/home/massive_rabbit/miniforge3/envs/NeuTrObs/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "/home/massive_rabbit/miniforge3/envs/NeuTrObs/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "/home/massive_rabbit/miniforge3/envs/NeuTrObs/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/massive_rabbit/miniforge3/envs/NeuTrObs/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-04-21 12:59:40,537 ERROR   wandb-AsyncioManager-main:1713505 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/massive_rabbit/miniforge3/envs/NeuTrObs/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/massive_rabbit/miniforge3/envs/NeuTrObs/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "/home/massive_rabbit/miniforge3/envs/NeuTrObs/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "/home/massive_rabbit/miniforge3/envs/NeuTrObs/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "/home/massive_rabbit/miniforge3/envs/NeuTrObs/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/massive_rabbit/miniforge3/envs/NeuTrObs/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-04-21 12:59:40,537 ERROR   wandb-AsyncioManager-main:1713505 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/massive_rabbit/miniforge3/envs/NeuTrObs/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/massive_rabbit/miniforge3/envs/NeuTrObs/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "/home/massive_rabbit/miniforge3/envs/NeuTrObs/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "/home/massive_rabbit/miniforge3/envs/NeuTrObs/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "/home/massive_rabbit/miniforge3/envs/NeuTrObs/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/massive_rabbit/miniforge3/envs/NeuTrObs/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost
+2026-04-21 12:59:40,543 ERROR   wandb-AsyncioManager-main:1713505 [asyncio_manager.py:fn_wrap_exceptions():184] Uncaught exception in run_soon callback.
+Traceback (most recent call last):
+  File "/home/massive_rabbit/miniforge3/envs/NeuTrObs/lib/python3.11/site-packages/wandb/sdk/lib/asyncio_manager.py", line 182, in fn_wrap_exceptions
+    await fn()
+  File "/home/massive_rabbit/miniforge3/envs/NeuTrObs/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 45, in publish
+    await self._send_server_request(request)
+  File "/home/massive_rabbit/miniforge3/envs/NeuTrObs/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 78, in _send_server_request
+    raise self._broken_exc.with_traceback(self._broken_tb)
+  File "/home/massive_rabbit/miniforge3/envs/NeuTrObs/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 87, in _send_server_request
+    await self._drain_writer()
+  File "/home/massive_rabbit/miniforge3/envs/NeuTrObs/lib/python3.11/site-packages/wandb/sdk/lib/service/service_client.py", line 96, in _drain_writer
+    await self._writer.drain()
+  File "/home/massive_rabbit/miniforge3/envs/NeuTrObs/lib/python3.11/asyncio/streams.py", line 392, in drain
+    await self._protocol._drain_helper()
+  File "/home/massive_rabbit/miniforge3/envs/NeuTrObs/lib/python3.11/asyncio/streams.py", line 166, in _drain_helper
+    raise ConnectionResetError('Connection lost')
+ConnectionResetError: Connection lost

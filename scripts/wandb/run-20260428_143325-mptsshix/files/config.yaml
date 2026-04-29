@@ -1,0 +1,61 @@
+_wandb:
+    value:
+        cli_version: 0.26.0
+        e:
+            u5hkwsxd4er4s3yiodaaj0dsn8rj89fq:
+                codePath: scripts/training_mnist.py
+                codePathLocal: training_mnist.py
+                cpu_count: 6
+                cpu_count_logical: 12
+                cudaVersion: "12.5"
+                disk:
+                    /:
+                        total: "982820896768"
+                        used: "904099467264"
+                email: patrick.mederitsch.pm@gmail.com
+                executable: /home/massive_rabbit/miniforge3/envs/NeuTrObs/bin/python
+                git:
+                    commit: e0d04ab9cb1a5ad387b211f17fd89871d827088b
+                    remote: git@github.com:Massive-Rabbit-8223/Neural-Training-Observatory.git
+                gpu: NVIDIA GeForce RTX 3060
+                gpu_count: 1
+                gpu_nvidia:
+                    - architecture: Ampere
+                      cudaCores: 3584
+                      memoryTotal: "12884901888"
+                      name: NVIDIA GeForce RTX 3060
+                      uuid: GPU-94973933-e7fe-5b1b-d4e7-f7ffed63d99f
+                host: aeon-desktop
+                memory:
+                    total: "67289313280"
+                os: Linux-6.8.0-86-generic-x86_64-with-glibc2.39
+                program: /home/massive_rabbit/Documents/GitHub/Neural-Training-Observatory/scripts/training_mnist.py
+                python: CPython 3.11.15
+                root: /home/massive_rabbit/Documents/GitHub/Neural-Training-Observatory/scripts
+                startedAt: "2026-04-28T12:33:25.881737Z"
+                writerId: u5hkwsxd4er4s3yiodaaj0dsn8rj89fq
+        m: []
+        python_version: 3.11.15
+        t:
+            "1":
+                - 1
+                - 41
+            "2":
+                - 1
+                - 41
+            "3":
+                - 13
+                - 16
+                - 61
+            "4": 3.11.15
+            "5": 0.26.0
+            "12": 0.26.0
+            "13": linux-x86_64
+batch_size:
+    value: 64
+epochs:
+    value: 5
+lr:
+    value: 0.001
+model:
+    value: MLP

@@ -1,0 +1,40 @@
+{
+  "os": "Linux-6.8.0-86-generic-x86_64-with-glibc2.39",
+  "python": "CPython 3.11.15",
+  "startedAt": "2026-04-21T10:53:43.367982Z",
+  "program": "/home/massive_rabbit/Documents/GitHub/Neural-Training-Observatory/scripts/training_mnist.py",
+  "codePath": "scripts/training_mnist.py",
+  "codePathLocal": "training_mnist.py",
+  "git": {
+    "remote": "git@github.com:Massive-Rabbit-8223/Neural-Training-Observatory.git",
+    "commit": "e0d04ab9cb1a5ad387b211f17fd89871d827088b"
+  },
+  "email": "patrick.mederitsch.pm@gmail.com",
+  "root": "/home/massive_rabbit/Documents/GitHub/Neural-Training-Observatory/scripts",
+  "host": "aeon-desktop",
+  "executable": "/home/massive_rabbit/miniforge3/envs/NeuTrObs/bin/python",
+  "cpu_count": 6,
+  "cpu_count_logical": 12,
+  "gpu": "NVIDIA GeForce RTX 3060",
+  "gpu_count": 1,
+  "disk": {
+    "/": {
+      "total": "982820896768",
+      "used": "904911290368"
+    }
+  },
+  "memory": {
+    "total": "67289313280"
+  },
+  "gpu_nvidia": [
+    {
+      "name": "NVIDIA GeForce RTX 3060",
+      "memoryTotal": "12884901888",
+      "cudaCores": 3584,
+      "architecture": "Ampere",
+      "uuid": "GPU-94973933-e7fe-5b1b-d4e7-f7ffed63d99f"
+    }
+  ],
+  "cudaVersion": "12.5",
+  "writerId": "5s3xvco7cl08xugzguvhgii1krxurpia"
+}

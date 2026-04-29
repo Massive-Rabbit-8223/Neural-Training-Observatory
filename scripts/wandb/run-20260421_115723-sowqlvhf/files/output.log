@@ -1,0 +1,12 @@
+  0%|                                                                 | 0/5 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/massive_rabbit/Documents/GitHub/Neural-Training-Observatory/scripts/training_mnist.py", line 161, in <module>
+    train(
+  File "/home/massive_rabbit/Documents/GitHub/Neural-Training-Observatory/scripts/training_mnist.py", line 102, in train
+    observer.emit(
+  File "/home/massive_rabbit/Documents/GitHub/Neural-Training-Observatory/src/neutrobs/utils/observer.py", line 33, in emit
+    self.logger.log(m)
+  File "/home/massive_rabbit/Documents/GitHub/Neural-Training-Observatory/src/neutrobs/utils/logger.py", line 25, in log
+    {key: wandb.Histogram(metric.value.numpy())},
+                          ^^^^^^^^^^^^^^^^^^
+AttributeError: 'numpy.ndarray' object has no attribute 'numpy'

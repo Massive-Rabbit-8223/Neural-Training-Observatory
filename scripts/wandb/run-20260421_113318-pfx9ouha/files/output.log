@@ -1,0 +1,12 @@
+  0%|                                                                 | 0/5 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/massive_rabbit/Documents/GitHub/Neural-Training-Observatory/scripts/training_mnist.py", line 161, in <module>
+    train(
+  File "/home/massive_rabbit/Documents/GitHub/Neural-Training-Observatory/scripts/training_mnist.py", line 102, in train
+    observer.emit(
+  File "/home/massive_rabbit/Documents/GitHub/Neural-Training-Observatory/src/neutrobs/utils/observer.py", line 28, in emit
+    metrics = handler(context)
+              ^^^^^^^^^^^^^^^^
+  File "/home/massive_rabbit/Documents/GitHub/Neural-Training-Observatory/src/neutrobs/utils/observer.py", line 100, in on_backward_end
+    Metric(
+TypeError: Metric.__init__() missing 1 required positional argument: 'run_id'

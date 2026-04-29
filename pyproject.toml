@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "neutrobs"
+version = "0.1.0"
+description = "Neural Training Observatory"
+authors = [{name="Patrick Mederitsch"}]
+dependencies = [
+    "torch",
+    "duckdb",
+    "wandb"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]

@@ -1,0 +1,17 @@
+{
+  "os": "Linux-6.8.0-86-generic-x86_64-with-glibc2.39",
+  "python": "CPython 3.11.15",
+  "startedAt": "2026-04-21T09:57:23.288663Z",
+  "program": "/home/massive_rabbit/Documents/GitHub/Neural-Training-Observatory/scripts/training_mnist.py",
+  "codePath": "scripts/training_mnist.py",
+  "codePathLocal": "training_mnist.py",
+  "git": {
+    "remote": "git@github.com:Massive-Rabbit-8223/Neural-Training-Observatory.git",
+    "commit": "e0d04ab9cb1a5ad387b211f17fd89871d827088b"
+  },
+  "email": "patrick.mederitsch.pm@gmail.com",
+  "root": "/home/massive_rabbit/Documents/GitHub/Neural-Training-Observatory/scripts",
+  "host": "aeon-desktop",
+  "executable": "/home/massive_rabbit/miniforge3/envs/NeuTrObs/bin/python",
+  "writerId": "0x1i0n5mu5yem8bue70voezlxacwgv4i"
+}

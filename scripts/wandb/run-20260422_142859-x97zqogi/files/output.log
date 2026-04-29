@@ -1,0 +1,12 @@
+  0%|                                                                 | 0/5 [00:00<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/massive_rabbit/Documents/GitHub/Neural-Training-Observatory/scripts/training_mnist.py", line 173, in <module>
+    train(
+  File "/home/massive_rabbit/Documents/GitHub/Neural-Training-Observatory/scripts/training_mnist.py", line 104, in train
+    observer.emit(
+  File "/home/massive_rabbit/Documents/GitHub/Neural-Training-Observatory/src/neutrobs/utils/observer.py", line 33, in emit
+    self.router.route(m)
+  File "/home/massive_rabbit/Documents/GitHub/Neural-Training-Observatory/src/neutrobs/utils/router.py", line 12, in route
+    processed = self.tensor_processor.process(metric)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'process'

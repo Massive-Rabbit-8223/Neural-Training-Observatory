@@ -1,0 +1,13 @@
+  0%|                                                                 | 0/5 [00:05<?, ?it/s]
+Traceback (most recent call last):
+  File "/home/massive_rabbit/Documents/GitHub/Neural-Training-Observatory/scripts/training_mnist.py", line 161, in <module>
+    train(
+  File "/home/massive_rabbit/Documents/GitHub/Neural-Training-Observatory/scripts/training_mnist.py", line 92, in train
+    observer.emit(
+  File "/home/massive_rabbit/Documents/GitHub/Neural-Training-Observatory/src/neutrobs/utils/observer.py", line 31, in emit
+    self.store.log(m)
+  File "/home/massive_rabbit/Documents/GitHub/Neural-Training-Observatory/src/neutrobs/utils/storage.py", line 49, in log
+    self.flush()
+  File "/home/massive_rabbit/Documents/GitHub/Neural-Training-Observatory/src/neutrobs/utils/storage.py", line 53, in flush
+    self.conn.executemany(
+_duckdb.NotImplementedException: Not implemented Error: Unable to transform python value of type '<class 'torch.Tensor'>' to DuckDB LogicalType
